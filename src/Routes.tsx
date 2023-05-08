@@ -2,21 +2,27 @@ import {  createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Catalog from "./pages/Catalog";
 import Admin from "./pages/Admin";
+import ErrorPage from "./assets/img/error/Error_page";
 
 
 
 const Routes = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: <Home />,
+    errorElement: <ErrorPage />
   },
   {
     path: "catalog",
-    element: <Catalog />
+    element: <Catalog />,
+    errorElement: <ErrorPage />
+
   },
   {
     path: "admin",
-    element: <Admin />
+    element: <Admin />,
+    errorElement: <ErrorPage />
+
   }
 ]);
 
