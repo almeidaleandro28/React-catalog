@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import logo from '../assets/img/menu_list.svg'
+import { Link } from 'react-router-dom';
 
 Navbar.propTypes = {
   alt: PropTypes.string
@@ -19,16 +20,16 @@ function Navbar( { alt } ) {
           <h4 className=''>ds catalog</h4>
         </a>
 
-        <button className='md:hidden' type='button'>
+        <button className='md:hidden' type='button' data-collapse-toggle="navbar-default" aria-controls="navbar-default" aria-expanded="false">
           <span className="sr-only">Open main menu</span>
-          <img src={logo} alt={alt} />
+          <img src={logo} alt={alt} aria-hidden="true"/>
         </button>
        
-       <div className='hidden w-full md:block '>
+       <div className='hidden w-full md:block' id='navbar-default'>
           <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="">catalog</a></li>
-            <li><a href="">admin</a></li>
+            <li><Link to="/">home</Link></li>
+            <li><Link to="catalog">catalog</Link></li>
+            <li><Link to="admin">admin</Link></li>
           </ul>
        </div>
 
