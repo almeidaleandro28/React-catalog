@@ -2,7 +2,7 @@ import {  createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Catalog from "./pages/Catalog";
 import Admin from "./pages/Admin";
-import ErrorPage from "./assets/img/error/Error_page";
+import ErrorPage from "./components/error/Error_page";
 
 
 
