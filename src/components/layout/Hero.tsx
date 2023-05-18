@@ -22,13 +22,13 @@ function Hero( { alt } ) {
         </div>
 
         <div className='w-96 h-20 mx-auto'>
-          <h1 className='font-bold leading-9 text-center tracking-wide'>know the best
+          <h1 className='font-bold leading-9 text-center tracking-wide text-2xl'>know the best
           product catalog
           </h1>
         </div>
 
         <div className='w-96 h-20 mx-auto'>
-          <p className='font-normal leading-6 tracking-wide'>
+          <p className='font-normal leading-6 tracking-wide text-base'>
             We will help you find 
             the best products available
             on the market.
@@ -38,7 +38,7 @@ function Hero( { alt } ) {
         <div className='w-96 h-12 flex justify-center mx-auto'>
           <Button text={"start your search now"} />
           <div>
-         
+            img
           </div>
         </div>
 
