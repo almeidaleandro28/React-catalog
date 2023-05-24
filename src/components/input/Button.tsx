@@ -13,7 +13,7 @@ Button.defaultProps = {
 
 function Button({ text, type}) {
   return (
-    <input className='text-white bg-blue-500 uppercase font-medium rounded-lg   hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 py-px' type={type} value={text} />
+    <input className='w-full text-white bg-blue-500 uppercase font-medium rounded-lg  hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 py-px' type={type} value={text} />
   );
 }
 

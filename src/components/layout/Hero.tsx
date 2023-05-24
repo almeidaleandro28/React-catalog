@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '../input/Button';
 import mainImg from '../../assets/img/main-image.svg';
+import { Arrow } from '../Arrow';
 
 
 Hero.propTypes = {
@@ -35,10 +36,10 @@ function Hero( { alt } ) {
           </p>
         </div>
         
-        <div className='w-96 h-12 flex justify-center mx-auto'>
+        <div className='w-96 h-12 flex justify-center mx-auto relative'>
           <Button text={"start your search now"} />
-          <div>
-            img
+          <div className='w-1/5 h-full rounded-lg bg-blue-900 absolute right-0 flex justify-center '>
+            <Arrow/>
           </div>
         </div>
 
