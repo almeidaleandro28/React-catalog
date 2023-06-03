@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import logo from '../../assets/img/menu_list.svg';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Menu from './Menu';
+import { Link } from 'react-router-dom';
 
 Navbar.propTypes = {
   alt: PropTypes.string
@@ -21,9 +21,9 @@ function Navbar( { alt } ) {
     <nav className='bg-blue-500 text-white'>
       <div className='flex justify-between align-middle p-4'>
 
-        <a className='flex' href="#">
+        <Link className='flex' to="/">
           <h4 className=''>ds catalog</h4>
-        </a>
+        </Link>
 
         <div className='md:block hidden'>
           <Menu />

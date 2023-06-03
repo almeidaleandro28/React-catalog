@@ -4,8 +4,6 @@ import Catalog from "./pages/Catalog";
 import Admin from "./pages/Admin";
 import ErrorPage from "./components/error/Error_page";
 
-
-
 const Routes = createBrowserRouter([
   {
     path: "/",
@@ -13,13 +11,13 @@ const Routes = createBrowserRouter([
     errorElement: <ErrorPage />
   },
   {
-    path: "catalog",
+    path: "/catalog",
     element: <Catalog />,
     errorElement: <ErrorPage />
 
   },
   {
-    path: "admin",
+    path: "/admin",
     element: <Admin />,
     errorElement: <ErrorPage />
 

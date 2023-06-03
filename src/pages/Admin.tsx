@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Navbar from '../components/navigation/Navbar';
+
 
 Admin.propTypes = {
   
@@ -7,7 +9,10 @@ Admin.propTypes = {
 
 function Admin(props) {
   return (
-    <h1>Admin</h1>
+    <div>
+      <Navbar />
+      <h1>Admin</h1>
+    </div>
   );
 }
 
